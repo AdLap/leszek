@@ -1,6 +1,7 @@
-@import "generic";
-@import "variables";
-@import "introduction";
-@import "offer";
-@import "contact";
-@import "footer";
+@import "reset";        //reset
+@import "generic";      //settings for body, .container, a, btn
+@import "variables";    //color, font, margin, padding, b-radius
+@import "home";         //section home
+@import "offer";        //section offer
+@import "contact";      //section contact
+@import "footer";       //footer
