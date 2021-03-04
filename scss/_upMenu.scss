@@ -1,0 +1,35 @@
+.upMenu {
+  margin-bottom: $main-margin;
+  height: 80px;
+  box-shadow: 0 3px 6px $color-shadow;
+}
+.upMenu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  @include font(1.5rem, $font-weight-bold);
+  line-height: 1rem;
+}
+
+.upMenu__menu-list {
+  display: inline-block;
+  margin-left: $main-margin;
+}
+
+a {
+  @include font(1.5rem, $font-weight-bold);
+  text-transform: uppercase;
+  color: $color-primary;
+  transition-duration: .5s;
+
+  &:hover {
+    color: red; //to remove, but why scale dont work??? duration,color is working... why scale not????!!!!
+    transform: scale(1.5);
+  }
+}
+

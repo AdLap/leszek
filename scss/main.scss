@@ -1,7 +1,12 @@
 @import "reset";        //reset
-@import "generic";      //settings for body, .container, a, btn
-@import "variables";    //color, font, margin, padding, b-radius
-@import "home";         //section home
+@import "generic";      //settings for body, .container
+@import "variables";    //color, font, margin, padding, b-radius, mixins
+@import "grid";         //grid, RWD
+@import "upMenu";       //header
+@import "my";           //section my
 @import "offer";        //section offer
 @import "contact";      //section contact
 @import "footer";       //footer
+
+
+// MEDIA I RWD FIRST !!!!!!!!!!!!!!!!!!!!!

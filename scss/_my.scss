@@ -1,0 +1,18 @@
+.my {
+  border: 2px solid blue;
+}
+.my {
+
+
+}
+.my__container-img {
+  width: 25%;
+  height: auto;
+}
+.my-img {
+  width: 100%;
+}
+
+.my-txt {
+  @include font(1.5rem, $font-weight-regular);
+}

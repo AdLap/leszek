@@ -1,8 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: url("../images/background.jpg") no-repeat fixed top left;
   background-size: cover;
 }
+
+section {
+  margin: 5rem auto;
+}
+
 .container {
-  width: 1000px;
+  width: 200px;
   margin: 0 auto;
 }
+
+
