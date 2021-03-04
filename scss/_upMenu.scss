@@ -1,5 +1,5 @@
 .upMenu {
-  margin-bottom: $main-margin;
+  margin-top: 0;
   height: 80px;
   box-shadow: 0 3px 6px $color-shadow;
 }
@@ -11,9 +11,10 @@
   top: 0;
 }
 
-.logo {
+.upMenu__logo {
   @include font(1.5rem, $font-weight-bold);
-  line-height: 1rem;
+  line-height: 1.5rem;
+  color: $color-logo;
 }
 
 .upMenu__menu-list {

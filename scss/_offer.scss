@@ -1,3 +1,14 @@
 .offer {
   border: 2px solid green;
+  //flex dla ustawienia, zmienić później na grid
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font(1rem, $font-weight-regular)
+}
+
+.offer__column {
+  display: flex;
+  flex-direction: column;
+
 }

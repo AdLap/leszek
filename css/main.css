@@ -17,12 +17,8 @@ body {
   background-size: cover;
 }
 
-section {
-  margin: 5rem auto;
-}
-
-.container {
-  width: 200px;
+.main__container {
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -257,7 +253,7 @@ section {
 }
 
 .upMenu {
-  margin-bottom: 2rem;
+  margin-top: 0;
   height: 80px;
   box-shadow: 0 3px 6px orangered;
 }
@@ -271,12 +267,13 @@ section {
   top: 0;
 }
 
-.logo {
+.upMenu__logo {
   font-family: "Serif Pro", serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.25rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
+  color: green;
 }
 
 .upMenu__menu-list {
@@ -303,12 +300,20 @@ a:hover {
 }
 
 .my__container-img {
-  width: 25%;
-  height: auto;
+  width: 450px;
+  height: 300px;
+  position: relative;
 }
 
 .my-img {
+  border: 1px solid red;
+  background-image: url("../images/industry_640.jpg");
+  background-size: cover;
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .my-txt {
@@ -320,10 +325,27 @@ a:hover {
 
 .offer {
   border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.offer__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact {
   border: 2px solid yellow;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
