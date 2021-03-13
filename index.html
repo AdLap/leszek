@@ -12,11 +12,15 @@
 <body>
 
 <header id="upMenu" class="upMenu">
-    <div class="upMenu__container main__container">
-        <div class="upMenu__logo">
-            <span class="upMenu__logo">EkoInstal<br>Leszek Miedziak</span>
+    <div class="upMenu__container">
+        <div class="upMenu__box__logo">
+            <img class="upMenu__logo" src="images/leszek-logo1.svg" alt="Leszek Miedziak">
         </div>
         <nav>
+            <label class="hamburger__menu">
+                <input class="hamburger__checkbox" type="checkbox">
+                <span class="hamburger__menu__btn"></span>
+            </label>
             <ul class="upMenu__menu">
                 <li class="upMenu__menu-list"><a href="index.html">home</a></li>
                 <li class="upMenu__menu-list"><a href="#my">o mnie</a></li>
@@ -28,18 +32,20 @@
 </header>
 
 <section id="my" class="my main__container">
-    <div class="my__container-img">
+    <div class="my__box-img">
         <div class="my-img"></div>
     </div>
-    <h1 class="main-title">Leszek Miedziak</h1>
-    <p class="my-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
-        iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <div class="my__box-txt">
+        <h1 class="main-title">Leszek Miedziak</h1>
+        <p class="my-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
+            iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
 </section>
 
 <section id="offer" class="offer main__container">
@@ -81,7 +87,7 @@
     </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="contact" class="contact main__container">
     <div class="contact-form">
         <form class="contact-text" action="mailto:leszekkonrad@interia.eu" method="post">
             <label for="name">Imię</label>

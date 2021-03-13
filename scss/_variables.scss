@@ -3,11 +3,11 @@ $main-padding: 2rem;
 $main-margin: 2rem;
 
 //COLORS
-$color-primary: blue;
-$color-accent: green;
-$color-title: red;
-$color-shadow: orangered;
-$color-logo: green;
+$color-primary: #0000ff;
+$color-accent: #008000;
+$color-title: #ff0000;
+$color-shadow: #ff4500;
+$color-logo: #008000;
 
 //FONT
 $font-weight-regular: 400;
@@ -20,5 +20,6 @@ $font-weight-light: 300;
   font-size: $size;
   font-weight: $weight;
   line-height: 1.5 * $size;
+  color: #000;
 }
 

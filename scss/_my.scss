@@ -1,23 +1,31 @@
-.my {
-  border: 2px solid blue;
-}
-
-.my__container-img {
-  width: 450px;
-  height: 300px;
-  position: relative;
-}
-.my-img {
-  border: 1px solid red;
-  background-image: url("../images/industry_640.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.my-txt {
-  @include font(1.5rem, $font-weight-regular);
-}
+//.my {
+//  border: 2px solid blue;
+//  height: calc(100vh - 80px);
+//  display: flex;
+//}
+//
+//.my__box-img {
+//  width: 45%;
+//  height: 50%;
+//  position: relative;
+//}
+//
+//.my-img {
+//  border: 1px solid red;
+//  background-image: url("../images/industry_640.jpg");
+//  background-size: contain;
+//  background-repeat: no-repeat;
+//  width: 100%;
+//  height: 100%;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//}
+//
+//.my__box-txt {
+//  width: 65%;
+//}
+//
+//.my-txt {
+//  @include font(1.5rem, $font-weight-regular);
+//}
