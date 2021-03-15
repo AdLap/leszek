@@ -3,5 +3,13 @@ body {
   //background-size: cover;
 }
 
+.main__container {
+  width: 100%;
+  padding: 15px;
 
+  @media (min-width: 700px) {
+    max-width: 1024px;
+    padding: 0;
+  }
+}
 
