@@ -13,7 +13,7 @@
 }
 
 .upMenu__box__logo {
-  height: 100%;
+  height: 75px;
 }
 
 .upMenu__logo {
@@ -89,6 +89,7 @@
 .upMenu__menu {
   position: absolute;
   right: 0;
+  text-align: right;
   transform: translateY(-200%);
   transition-duration: .5s;
 
