@@ -3,22 +3,21 @@
   //height: calc(100vh - 80px);
 }
 
-.my__box__img {
-  width: 100%;
-  max-height: 460px;
-  margin: 0 auto;
-  //position: relative;
-}
-
-.my__img {
-  width: 100%;
-  height: auto;
-}
-
 .my__box__txt {
   order: 1;
 }
 
-.my__txt {
-  @include font(1.5rem, $font-weight-regular);
+.main__title {
+  @include font(3rem, $font-bold);
+  text-align: center;
 }
+
+.my__txt {
+  text-align: justify;
+
+  @media (min-width: 750px) {
+    text-align: left;
+  }
+}
+
+

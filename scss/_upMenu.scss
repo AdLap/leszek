@@ -104,7 +104,7 @@
 
 .upMenu__menu__list {
   a {
-    @include font(1.5rem, $font-weight-bold);
+    @include font(1.5rem, $font-bold);
     text-transform: uppercase;
     color: $color-primary;
 

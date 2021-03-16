@@ -24,7 +24,7 @@ $column-base-width: 100% / $columns;
       }
     }
     @for $i from 1 through $columns {
-      @media (min-width: 1200px) {
+      @media (min-width: 1024px) {
         .col-md-#{$i} {
           width: $column-base-width * $i;
         }

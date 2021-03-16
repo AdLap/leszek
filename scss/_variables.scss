@@ -10,10 +10,11 @@ $color-shadow: #ff4500;
 $color-logo: #008000;
 $color-hamburgerMenu: #444;
 $color-menuBackground: #fff;
+
 //FONT
-$font-weight-regular: 400;
-$font-weight-bold: 700;
-$font-weight-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-light: 300;
 
 //MIXINS
 @mixin font($size, $weight) {

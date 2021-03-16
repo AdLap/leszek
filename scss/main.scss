@@ -1,7 +1,8 @@
 @import "reset";        //reset
-@import "generic";      //settings for body, .container
+//@import "generic";      //settings for body, .container
 @import "variables";    //color, font, margin, padding, b-radius, mixins
 @import "grid";         //grid, RWD
+@import "general";      //default element styles
 @import "upMenu";       //header
 @import "my";           //section my
 @import "offer";        //section offer
