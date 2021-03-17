@@ -5,3 +5,9 @@
 .offer__txt {
   text-align: justify;
 }
+
+.offer__column:nth-of-type(2) {
+  .img {
+    order: 2;
+  }
+}

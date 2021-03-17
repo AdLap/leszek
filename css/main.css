@@ -447,6 +447,29 @@ h3 {
   text-align: justify;
 }
 
+.offer__column:nth-of-type(2) .img {
+  order: 2;
+}
+
+.realization__gallery {
+  background-color: #000;
+  padding: 15px;
+  overflow: auto;
+}
+
+.galley__box {
+  height: 500px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.realization__img {
+  margin: 10px;
+  height: 100%;
+  width: auto;
+}
+
 .company__name {
   text-align: left;
 }
