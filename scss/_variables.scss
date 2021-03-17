@@ -1,6 +1,8 @@
-//SEPARATING
-$main-padding: 2rem;
-$main-margin: 2rem;
+//SEPARATING, RADIUS
+$padding-main: 2rem;
+$margin-main: 2rem;
+
+$radius-main: 8px;
 
 //COLORS
 $color-primary: #0000ff;
@@ -10,6 +12,7 @@ $color-shadow: #ff4500;
 $color-logo: #008000;
 $color-hamburgerMenu: #444;
 $color-menuBackground: #fff;
+$color-placeholder: #808080;
 
 //FONT
 $font-regular: 400;

@@ -265,6 +265,19 @@ li {
   font-weight: 700;
   line-height: 3rem;
   color: #000;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 .txt {
@@ -432,5 +445,85 @@ li {
 
 .offer__txt {
   text-align: justify;
+}
+
+.company__name {
+  text-align: left;
+}
+.company__name span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000;
+  padding: 1rem 0 0.8rem 0;
+}
+
+.form__input {
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 1px solid red;
+}
+.form__input::-moz-placeholder {
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #000;
+  color: #808080;
+}
+.form__input:-ms-input-placeholder {
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #000;
+  color: #808080;
+}
+.form__input::placeholder {
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #000;
+  color: #808080;
+}
+
+.form__button {
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000;
+  padding: 5px 10px;
+  background-color: #0000ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition-duration: 0.5s;
+}
+
+.form__button:hover {
+  box-shadow: 0 0 5px 3px #ff4500;
+}
+
+.form__button:active {
+  transform: scale(1.1);
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

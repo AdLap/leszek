@@ -1,13 +1,60 @@
+.company__name {
+  text-align: left;
 
+  span {
+    font-size: 1.5rem;
+    font-weight: $font-light;
+  }
+}
 
+                                                              //FORM
+.form__field {
+  display: flex;
+  flex-direction: column;
 
+  textarea {
+      //height: 100px;
+  }
+}
 
+.form__label {
+  @include font(1rem, $font-regular);
+  padding: 1rem 0 .8rem 0;
+}
 
+.form__input {
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid grey;
 
-//.contact {
-//  border: 2px solid yellow;
-//}
-//.contact-text {
-//  display: flex;
-//  flex-direction: column;
-//}
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+
+  &::placeholder {
+    @include font(1rem, $font-light);
+    color: $color-placeholder;
+  }
+}
+
+.form__button {
+  @include font(1rem, $font-regular);
+  padding: 5px 10px;
+  background-color: $color-primary;
+  border: none;
+  border-radius: $radius-main;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition-duration: .5s;
+}
+
+.form__button:hover {
+  box-shadow: 0 0 5px 3px $color-shadow;
+}
+
+.form__button:active {
+  transform: scale(1.1);
+  outline: none;
+}
