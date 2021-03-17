@@ -526,4 +526,42 @@ h3 {
   transform: scale(1.1);
   outline: none;
 }
+
+.footer__container {
+  height: 70px;
+  box-shadow: 0 -3px 6px #ff4500;
+}
+
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contact {
+  font-family: "Serif Pro", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+.footer__logo__box {
+  height: 65px;
+}
+
+.footer__logo {
+  width: auto;
+  height: 100%;
+}
+
+.copyright {
+  font-family: "Serif Pro", serif;
+  font-size: 0.5rem;
+  font-weight: 300;
+  line-height: 0.75rem;
+  color: #000;
+  color: #ff4500;
+}
 /*# sourceMappingURL=main.css.map */

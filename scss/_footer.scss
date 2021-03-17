@@ -1,0 +1,29 @@
+.footer__container {
+  height: 70px;
+  box-shadow: 0 -3px 6px $color-shadow;
+}
+
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contact {
+  @include font(1rem, $font-regular);
+}
+
+.footer__logo__box {
+  height: 65px;
+}
+
+.footer__logo {
+  width: auto;
+  height: 100%;
+}
+
+.copyright {
+  @include font(.5rem, $font-light);
+  color: $color-shadow;
+}
