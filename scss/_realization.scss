@@ -1,5 +1,9 @@
+.realization {
+  box-shadow: -3px 0 6px $color-shadow;
+}
+
 .realization__gallery {
-  background-color: $color-background-gallery;
+  //background-color: transparent;
   padding: 15px;
   overflow: auto;
 }

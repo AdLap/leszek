@@ -506,8 +506,11 @@ h4 {
   }
 }
 
+.realization {
+  box-shadow: -3px 0 6px #726d6d;
+}
+
 .realization__gallery {
-  background-color: #000;
   padding: 15px;
   overflow: auto;
 }
