@@ -20,12 +20,7 @@
     .txt {
       margin: 0;
       padding: 0;
-      //> a {
-      //  @include font-txt(1rem, $font-regular);
-      //}
-      //> span {
-      //  @include font-txt(1rem, $font-regular);
-      //}
+      line-height: 2em;
     }
   }
 }

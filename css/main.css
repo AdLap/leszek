@@ -552,6 +552,7 @@ h4 {
 .contact__box .contact__adress .txt {
   margin: 0;
   padding: 0;
+  line-height: 2em;
 }
 
 .form__field {
