@@ -11,7 +11,7 @@
 }
 
 .footer__contact {
-  @include font(1rem, $font-regular);
+  @include font-title(1rem, $font-regular);
 }
 
 .footer__logo__box {
@@ -24,6 +24,6 @@
 }
 
 .copyright {
-  @include font(.5rem, $font-light);
+  @include font-title(.5rem, $font-light);
   color: $color-shadow;
 }

@@ -1,11 +1,14 @@
+@use "sass:color";
+
 .upMenu__container {
-  height: 80px;
+  height: 100px;
   box-shadow: 0 3px 6px $color-shadow;
+  z-index: 10;
 }
 
 .upMenu__bar {
   width: 100%;
-  padding: 15px;
+  padding: 0 15px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -13,7 +16,9 @@
 }
 
 .upMenu__box__logo {
-  height: 75px;
+  height: 100%;
+  border-radius: 50%;
+  //box-shadow: 0 0 1px color.scale($color-shadow, $lightness: 30%);
 }
 
 .upMenu__logo {
@@ -103,16 +108,15 @@
 }
 
 .upMenu__menu__list {
+  transition-duration: .5s;
+
   a {
-    @include font(1.5rem, $font-bold);
+    @include font-title(1.5rem, $font-bold);
     text-transform: uppercase;
-    color: $color-primary;
+  }
 
-
-    &:hover {
-      color: red; //to remove, but why scale dont work??? duration,color is working... why scale not????!!!!
-      transform: scale(1.5);
-    }
+  &:hover {
+    transform: scale(1.1);
   }
 
   @media (min-width: 700px) {
@@ -121,8 +125,9 @@
   }
 }
 
+
 .hamburger__checkbox:checked + .upMenu__menu {
-  transform: translateY(50px);
+  transform: translateY(70px);
   text-align: right;
   background-color: $color-menuBackground;
   padding: 10px;

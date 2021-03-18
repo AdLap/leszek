@@ -7,25 +7,38 @@ $radius-main: 8px;
 //COLORS
 $color-primary: #0000ff;
 $color-accent: #008000;
-$color-title: #ff0000;
-$color-shadow: #ff4500;
+$color-title: #111576;
+$color-txt: #000489;
+$color-shadow: #726d6d;
 $color-logo: #008000;
 $color-hamburgerMenu: #444;
 $color-menuBackground: #fff;
 $color-placeholder: #808080;
 $color_background-gallery: #000;
+$color-background: #eeeeee;
+$color-box: #fff;
 
 //FONT
+$font-light: 300;
 $font-regular: 400;
 $font-bold: 700;
-$font-light: 300;
+$font-extraBold: 800;
+
 
 //MIXINS
-@mixin font($size, $weight) {
-  font-family: "Serif Pro", serif;
+@mixin font-txt($size, $weight) {
+  font-family: "Nunito Sans", sans-serif;
   font-size: $size;
   font-weight: $weight;
   line-height: 1.5 * $size;
-  color: #000;
+  color: $color-txt;
+}
+
+@mixin font-title($size, $weight) {
+  font-family: "Ubuntu", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: 1.5 * $size;
+  color: $color-title;
 }
 

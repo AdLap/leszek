@@ -15,7 +15,7 @@ li {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 .container .row {
   display: flex;
@@ -23,7 +23,12 @@ li {
 }
 .container .row [class*=col-] {
   min-height: 1px;
-  padding: 12px;
+  padding: 2rem 1rem;
+}
+@media (min-width: 750px) {
+  .container .row [class*=col-] {
+    padding: 2rem;
+  }
 }
 .container .row .col-xs-1 {
   width: 8.3333333333%;
@@ -249,7 +254,7 @@ li {
 @media (min-width: 1200px) {
   .main__container {
     max-width: 1200px;
-    padding: 0;
+    padding: 2rem 0;
     margin: 0 auto;
   }
 }
@@ -260,16 +265,16 @@ li {
 }
 
 .title {
-  font-family: "Serif Pro", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
-  color: #000;
+  color: #111576;
   text-align: center;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -277,25 +282,31 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
 }
 
 .txt {
-  font-family: "Serif Pro", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.25rem;
-  color: #000;
+  color: #000489;
+  margin-top: 2rem;
 }
 
 .upMenu__container {
-  height: 80px;
-  box-shadow: 0 3px 6px #ff4500;
+  height: 100px;
+  box-shadow: 0 3px 6px #726d6d;
+  z-index: 10;
 }
 
 .upMenu__bar {
   width: 100%;
-  padding: 15px;
+  padding: 0 15px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -303,7 +314,8 @@ h3 {
 }
 
 .upMenu__box__logo {
-  height: 75px;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .upMenu__logo {
@@ -386,18 +398,19 @@ h3 {
   }
 }
 
+.upMenu__menu__list {
+  transition-duration: 0.5s;
+}
 .upMenu__menu__list a {
-  font-family: "Serif Pro", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.25rem;
-  color: #000;
+  color: #111576;
   text-transform: uppercase;
-  color: #0000ff;
 }
-.upMenu__menu__list a:hover {
-  color: red;
-  transform: scale(1.5);
+.upMenu__menu__list:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 700px) {
   .upMenu__menu__list {
@@ -407,7 +420,7 @@ h3 {
 }
 
 .hamburger__checkbox:checked + .upMenu__menu {
-  transform: translateY(50px);
+  transform: translateY(70px);
   text-align: right;
   background-color: #fff;
   padding: 10px;
@@ -418,29 +431,48 @@ h3 {
 }
 
 .my__box__txt {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #726d6d;
   order: 1;
 }
 
 .main__title {
-  font-family: "Serif Pro", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.5rem;
-  color: #000;
+  color: #111576;
   text-align: center;
 }
 
 .my__txt {
   text-align: justify;
 }
+
+.offer {
+  background-color: #eeeeee;
+}
+
+.offer__box__img {
+  border-radius: 50%;
+}
 @media (min-width: 750px) {
-  .my__txt {
-    text-align: left;
+  .offer__box__img {
+    height: 215px;
   }
+}
+
+.offer__img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #726d6d;
 }
 
 .offer__title {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .offer__txt {
@@ -449,6 +481,29 @@ h3 {
 
 .offer__column:nth-of-type(2) .img {
   order: 2;
+}
+
+@media (min-width: 750px) and (max-width: 1023px) {
+  .offer__row .offer__column:last-child {
+    display: inline-block;
+  }
+  .offer__row .offer__column:last-child::after, .offer__row .offer__column:last-child::before {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .offer__row .offer__column:last-child .offer__box__img,
+.offer__row .offer__column:last-child .offer__img {
+    border-radius: 0;
+    float: left;
+    width: 305px;
+    height: auto;
+    margin: 0 1em 0 0;
+  }
+  .offer__row .offer__column:last-child .offer__title {
+    margin: 0 0 2rem 2rem;
+    line-height: 1em;
+  }
 }
 
 .realization__gallery {
@@ -471,6 +526,11 @@ h3 {
 }
 
 .company__name {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #111576;
   text-align: left;
 }
 .company__name span {
@@ -478,16 +538,38 @@ h3 {
   font-weight: 300;
 }
 
+.contact__adress {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000489;
+}
+.contact__adress > a {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000489;
+}
+.contact__adress > span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000489;
+}
+
 .form__field {
   display: flex;
   flex-direction: column;
 }
 .form__label {
-  font-family: "Serif Pro", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #000;
+  color: #000489;
   padding: 1rem 0 0.8rem 0;
 }
 
@@ -501,36 +583,36 @@ h3 {
   border-bottom: 1px solid red;
 }
 .form__input::-moz-placeholder {
-  font-family: "Serif Pro", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
-  color: #000;
+  color: #000489;
   color: #808080;
 }
 .form__input:-ms-input-placeholder {
-  font-family: "Serif Pro", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
-  color: #000;
+  color: #000489;
   color: #808080;
 }
 .form__input::placeholder {
-  font-family: "Serif Pro", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
-  color: #000;
+  color: #000489;
   color: #808080;
 }
 
 .form__button {
-  font-family: "Serif Pro", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #000;
+  color: #000489;
   padding: 5px 10px;
   background-color: #0000ff;
   border: none;
@@ -542,7 +624,7 @@ h3 {
 }
 
 .form__button:hover {
-  box-shadow: 0 0 5px 3px #ff4500;
+  box-shadow: 0 0 5px 3px #726d6d;
 }
 
 .form__button:active {
@@ -552,7 +634,7 @@ h3 {
 
 .footer__container {
   height: 70px;
-  box-shadow: 0 -3px 6px #ff4500;
+  box-shadow: 0 -3px 6px #726d6d;
 }
 
 .footer {
@@ -563,11 +645,11 @@ h3 {
 }
 
 .footer__contact {
-  font-family: "Serif Pro", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #000;
+  color: #111576;
 }
 
 .footer__logo__box {
@@ -580,11 +662,11 @@ h3 {
 }
 
 .copyright {
-  font-family: "Serif Pro", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.5rem;
   font-weight: 300;
   line-height: 0.75rem;
-  color: #000;
-  color: #ff4500;
+  color: #111576;
+  color: #726d6d;
 }
 /*# sourceMappingURL=main.css.map */

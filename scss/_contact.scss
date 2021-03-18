@@ -1,4 +1,5 @@
 .company__name {
+  @include font-title(2rem, $font-bold);
   text-align: left;
 
   span {
@@ -7,6 +8,16 @@
   }
 }
 
+.contact__adress {
+  @include font-txt(1rem, $font-regular);
+
+  > a {
+    @include font-txt(1rem, $font-regular);
+  }
+  > span {
+    @include font-txt(1rem, $font-regular);
+  }
+}
                                                               //FORM
 .form__field {
   display: flex;
@@ -18,7 +29,7 @@
 }
 
 .form__label {
-  @include font(1rem, $font-regular);
+  @include font-txt(1rem, $font-regular);
   padding: 1rem 0 .8rem 0;
 }
 
@@ -33,13 +44,13 @@
   }
 
   &::placeholder {
-    @include font(1rem, $font-light);
+    @include font-txt(1rem, $font-light);
     color: $color-placeholder;
   }
 }
 
 .form__button {
-  @include font(1rem, $font-regular);
+  @include font-txt(1rem, $font-regular);
   padding: 5px 10px;
   background-color: $color-primary;
   border: none;

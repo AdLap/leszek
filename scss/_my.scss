@@ -1,23 +1,34 @@
 .my {
+  //background-color: $color-background;
   //border: 2px solid blue;
   //height: calc(100vh - 80px);
 }
 
+.my__box__img {
+}
+
+.my__img {
+  //box-shadow: 0 0 6px $color-shadow;
+}
+
 .my__box__txt {
+  background-color: $color-box;
+  border-radius: $radius-main;
+  box-shadow: 0 0 6px $color-shadow;
   order: 1;
 }
 
 .main__title {
-  @include font(3rem, $font-bold);
+  @include font-title(3rem, $font-bold);
   text-align: center;
 }
 
 .my__txt {
   text-align: justify;
 
-  @media (min-width: 750px) {
-    text-align: left;
-  }
+  //@media (min-width: 750px) {
+  //  text-align: left;
+  //}
 }
 
 

@@ -4,7 +4,7 @@
 
   @media (min-width: 1200px) {
     max-width: 1200px;
-    padding: 0;
+    padding: 2rem 0;
     margin: 0 auto;
   }
 }
@@ -21,22 +21,19 @@
 }
 
 .title {
-  @include font(2rem, $font-bold);
+  @include font-title(2rem, $font-bold);
   text-align: center;
+
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
+@for $i from 1 through 4 {
+  h#{$i} {
+    font-size: 3rem - .5;
+  }
 }
 
 .txt {
-  @include font(1.5rem, $font-regular);
+  @include font-txt(1.5rem, $font-regular);
+  margin-top: 2rem;
 }
+
