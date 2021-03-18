@@ -1,3 +1,7 @@
+.contact__box {
+  padding: 1rem;
+}
+
 .company__name {
   @include font-title(2rem, $font-bold);
   text-align: left;
@@ -8,14 +12,21 @@
   }
 }
 
-.contact__adress {
-  @include font-txt(1rem, $font-regular);
+.contact__box {
 
-  > a {
+  .contact__adress {
     @include font-txt(1rem, $font-regular);
-  }
-  > span {
-    @include font-txt(1rem, $font-regular);
+
+    .txt {
+      margin: 0;
+      padding: 0;
+      //> a {
+      //  @include font-txt(1rem, $font-regular);
+      //}
+      //> span {
+      //  @include font-txt(1rem, $font-regular);
+      //}
+    }
   }
 }
                                                               //FORM

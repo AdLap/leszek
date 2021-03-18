@@ -33,7 +33,7 @@
 }
 
 .txt {
-  @include font-txt(1.5rem, $font-regular);
+  @include font-txt(1rem, $font-regular);
   margin-top: 2rem;
 }
 

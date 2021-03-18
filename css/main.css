@@ -291,9 +291,9 @@ h4 {
 
 .txt {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 2.25rem;
+  line-height: 1.5rem;
   color: #000489;
   margin-top: 2rem;
 }
@@ -525,6 +525,10 @@ h4 {
   width: auto;
 }
 
+.contact__box {
+  padding: 1rem;
+}
+
 .company__name {
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
@@ -538,26 +542,16 @@ h4 {
   font-weight: 300;
 }
 
-.contact__adress {
+.contact__box .contact__adress {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: #000489;
 }
-.contact__adress > a {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: #000489;
-}
-.contact__adress > span {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: #000489;
+.contact__box .contact__adress .txt {
+  margin: 0;
+  padding: 0;
 }
 
 .form__field {
