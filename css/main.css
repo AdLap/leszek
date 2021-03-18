@@ -525,8 +525,14 @@ h4 {
   width: auto;
 }
 
-.contact__box {
+.contact .row .title {
+  padding-bottom: 0;
+}
+.contact .contact__box {
   padding: 1rem;
+}
+.contact .contact__box .company__name {
+  padding-top: 0;
 }
 
 .company__name {
@@ -555,10 +561,20 @@ h4 {
   line-height: 2em;
 }
 
-.form__field {
+.contact__form {
   display: flex;
   flex-direction: column;
 }
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form__field:last-of-type {
+  width: 100%;
+}
+
 .form__label {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
@@ -603,19 +619,25 @@ h4 {
 }
 
 .form__button {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5rem;
-  color: #000489;
+  color: #111576;
   padding: 5px 10px;
-  background-color: #0000ff;
+  background-color: #0da109;
   border: none;
   border-radius: 8px;
   color: #fff;
+  align-self: flex-end;
   cursor: pointer;
   margin-top: 1rem;
   transition-duration: 0.5s;
+}
+@media (min-width: 750px) {
+  .form__button {
+    align-self: flex-start;
+  }
 }
 
 .form__button:hover {

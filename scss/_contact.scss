@@ -1,5 +1,16 @@
-.contact__box {
-  padding: 1rem;
+.contact {
+  .row {
+    .title {
+      padding-bottom: 0;
+    }
+  }
+  .contact__box {
+    padding: 1rem;
+    .company__name {
+      padding-top: 0;
+
+    }
+  }
 }
 
 .company__name {
@@ -13,7 +24,6 @@
 }
 
 .contact__box {
-
   .contact__adress {
     @include font-txt(1rem, $font-regular);
 
@@ -25,12 +35,18 @@
   }
 }
                                                               //FORM
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__field {
   display: flex;
   flex-direction: column;
+  width: 50%;
 
-  textarea {
-      //height: 100px;
+  &:last-of-type {
+      width: 100%;
   }
 }
 
@@ -56,15 +72,20 @@
 }
 
 .form__button {
-  @include font-txt(1rem, $font-regular);
+  @include font-title(1rem, $font-bold);
   padding: 5px 10px;
-  background-color: $color-primary;
+  background-color: $color-btn;
   border: none;
   border-radius: $radius-main;
   color: #fff;
+  align-self: flex-end;
   cursor: pointer;
   margin-top: 1rem;
   transition-duration: .5s;
+
+  @media (min-width: 750px) {
+    align-self: flex-start;
+  }
 }
 
 .form__button:hover {
@@ -75,18 +96,3 @@
   transform: scale(1.1);
   outline: none;
 }
-
-//.map {
-//  height: 0;
-//  padding-bottom: 1%;
-//  position: relative;
-//  width: 100%;
-//
-//  .map__google {
-//    height: 100%;
-//    left: 0;
-//    position: absolute;
-//    top: 0;
-//    width: 100%;
-//  }
-//}
