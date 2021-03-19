@@ -4,6 +4,10 @@
   height: 100px;
   box-shadow: 0 3px 6px $color-shadow;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $color-menuBackground;
 }
 
 .upMenu__bar {
