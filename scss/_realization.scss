@@ -1,3 +1,123 @@
+//  Animated version
+// two keyframes, first is showing img, second change img
+
+//.realization {
+//  box-shadow: -3px 0 6px $color-shadow;
+//}
+//
+//@keyframes image-show {
+//  0% {
+//    opacity: 0;
+//  }
+//  10% {
+//    opacity: 1;
+//  }
+//
+//  100% {
+//    opacity: 0;
+//  }
+//}
+//
+//@keyframes image-change {
+//  0% {
+//    img {
+//      display: none;
+//    }
+//    img:first-of-type {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  14.2857% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(2) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  28.5714% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(3) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  42.8571% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(4) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  57.1428% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(5) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  71.4285% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(6) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  85.7142% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(7) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  100% {
+//    img {
+//      display: none;
+//    }
+//    img:last-of-type {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//}
+//
+//.galley__box {
+//  height: 400px;
+//  width: 100%;
+//  background-color: pink;
+//  box-shadow: 0 0 1px $color-shadow;
+//  animation: image-change 2s infinite;
+//  //transition-duration: 3s;
+//
+//  @media (min-w//display: flex;
+  //flex-wrap: nowrap;
+  //align-items: center;width: 750px) {
+//    height: 500px;
+//  }
+//
+//}
+//
+//.realization__img {
+//  margin: 10px;
+//  width: 100px;
+//  height: auto;
+//}
+
+
+// VERSION with bottom slider, all photos in one row
+
 .realization {
   box-shadow: -3px 0 6px $color-shadow;
 }
@@ -5,19 +125,130 @@
 .realization__gallery {
   //background-color: transparent;
   padding: 15px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .galley__box {
   height: 500px;
+  width: 100%;
+  //border: 1px solid red;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  gap: 15px;
 }
 
 .realization__img {
-  margin: 10px;
+  //margin-bottom: 10px;
   height: 100%;
   width: auto;
+  box-shadow: 0 0 1px $color-shadow;
+  animation-name: img-show;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  //animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation-play-state: paused;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  //@for $i from 1 through 7 {
+  //  &:nth-of-type(#{$i}) {
+  //    animation-delay: $i + 2s;
+  //  }
+  //}
 }
 
+
+
+@keyframes img-show {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    //transform: translateY(-100%);
+  }
+}
+
+
+//@keyframes img-slide {
+//  0% {
+//    opacity: 0;
+//  }
+//}
+
+
+//@keyframes img-change {
+//  0% {
+//    opacity: 0;
+//    }
+//  14.2857% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(2) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  28.5714% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(3) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  42.8571% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(4) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  57.1428% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(5) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  71.4285% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(6) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  85.7142% {
+//    img {
+//      display: none;
+//    }
+//    img:nth-of-type(7) {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//  100% {
+//    img {
+//      display: none;
+//    }
+//    img:last-of-type {
+//      display: block;
+//      animation-name: image-show;
+//    }
+//  }
+//}

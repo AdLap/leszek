@@ -92,6 +92,7 @@
 }
 
 .upMenu__menu {
+  background-color: $color-menuBackground;
   position: absolute;
   right: 0;
   text-align: right;
@@ -99,6 +100,7 @@
   transition-duration: .5s;
 
     @media (min-width: 700px) {
+      background-color: transparent;
       transform: translateY(0);
       transition-duration: 0s;
       position: static;
@@ -112,6 +114,7 @@
 
   a {
     @include font-title(1.5rem, $font-bold);
+    color: $color-hamburgerMenu-font;
     text-transform: uppercase;
   }
 
@@ -122,8 +125,13 @@
   @media (min-width: 700px) {
     display: inline-block;
     margin-left: $margin-main;
+
+    a {
+      text-shadow: 0 0 6px $color-shadow;
+    }
   }
 }
+
 
 
 .hamburger__checkbox:checked + .upMenu__menu {
