@@ -1,15 +1,9 @@
 .my {
-  //background-color: $color-background;
-  //border: 2px solid blue;
-  //height: calc(100vh - 80px);
   padding-top: 100px;
 }
 
-.my__box__img {
-}
-
 .my__img {
-  //box-shadow: 0 0 6px $color-shadow;
+  box-shadow: 0 0 6px $color-shadow;
 }
 
 .my__box__txt {
@@ -26,10 +20,6 @@
 
 .my__txt {
   text-align: justify;
-
-  //@media (min-width: 750px) {
-  //  text-align: left;
-  //}
 }
 
 
