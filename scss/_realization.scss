@@ -4,9 +4,16 @@
 }
 
 .galley__box {
+  background-color: $color-menuBackground;
+  border-radius: $radius-main;
   height: 500px;
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  padding: 1rem;
 }
 
 .realization__img {
@@ -14,18 +21,5 @@
   width: auto;
   box-shadow: 0 0 6px $color-shadow;
   border-radius: $radius-main;
-  animation-duration: 30s;
-  animation-timing-function: ease;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @for $i from 1 through 8 {
-    &:nth-child(#{$i}) {
-      animation-name: img-change-#{$i};
-    }
-  }
+  margin: 0 1rem;
 }
