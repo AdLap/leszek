@@ -22,6 +22,10 @@
     font-size: 1.5rem;
     font-weight: $font-light;
   }
+
+  strong {
+    text-shadow: 0 0 3px $color-shadow;
+  }
 }
 
 .contact__box {
@@ -33,6 +37,11 @@
       padding: 0;
       line-height: 2em;
     }
+  }
+}
+.contact__adress {
+  a {
+    color: $color-txt;
   }
 }
                                                               //FORM

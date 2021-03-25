@@ -426,7 +426,7 @@ h4 {
     margin-left: 2rem;
   }
   .upMenu__menu__list a {
-    text-shadow: 0 0 6px #726d6d;
+    text-shadow: 0 0 4px #726d6d;
   }
 }
 
@@ -466,6 +466,12 @@ h4 {
 }
 
 .my__box__img {
+  background-image: url("../images/leszek-logo1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-blend-mode: difference;
   width: 100%;
   height: 360px;
   border-radius: 8px;
@@ -480,14 +486,14 @@ h4 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
 }
 .my__img:nth-child(1) {
   -webkit-animation-name: img-change-1;
@@ -615,7 +621,7 @@ h4 {
 }
 @-webkit-keyframes img-change-4 {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   25% {
     opacity: 0;
@@ -632,7 +638,7 @@ h4 {
 }
 @keyframes img-change-4 {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   25% {
     opacity: 0;
@@ -756,6 +762,9 @@ h4 {
   font-size: 1.5rem;
   font-weight: 300;
 }
+.company__name strong {
+  text-shadow: 0 0 3px #726d6d;
+}
 
 .contact__box .contact__adress {
   font-family: "Nunito Sans", sans-serif;
@@ -768,6 +777,10 @@ h4 {
   margin: 0;
   padding: 0;
   line-height: 2em;
+}
+
+.contact__adress a {
+  color: #000489;
 }
 
 .contact__form {

@@ -1,8 +1,8 @@
-@mixin img-change {
-  animation-duration: 20s;
+@mixin animation-img-change {
+  animation-duration: 15s;
   animation-timing-function: ease;
-  animation-direction: normal;
   animation-iteration-count: infinite;
+  animation-direction: normal;
 
   @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
@@ -66,7 +66,7 @@
   }
   @keyframes img-change-4 {
     0% {
-      opacity: 0;
+      opacity: 1;
     }
     25% {
       opacity: 0;
