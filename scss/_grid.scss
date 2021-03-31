@@ -1,3 +1,8 @@
+$tablet: 750px;
+$laptop: 1024px;
+$fullHD: 1900px;
+
+
 $columns: 12;
 $column-base-width: 100% / $columns;
 .container {
@@ -11,7 +16,7 @@ $column-base-width: 100% / $columns;
       min-height: 1px;
       padding: 2rem 1rem;
 
-      @media (min-width: 750px) {
+      @media (min-width: $tablet) {
         padding: 2rem;
       }
     }
@@ -21,21 +26,21 @@ $column-base-width: 100% / $columns;
       }
     }
     @for $i from 1 through $columns {
-      @media (min-width: 750px) {
+      @media (min-width: $tablet) {
         .col-sm-#{$i} {
           width: $column-base-width * $i;
         }
       }
     }
     @for $i from 1 through $columns {
-      @media (min-width: 1024px) {
+      @media (min-width: $laptop) {
         .col-md-#{$i} {
           width: $column-base-width * $i;
         }
       }
     }
     @for $i from 1 through $columns {
-      @media (min-width: 1800px) {
+      @media (min-width: $fullHD) {
         .col-lg-#{$i} {
           width: $column-base-width * $i;
         }

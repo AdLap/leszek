@@ -186,62 +186,62 @@ li {
     width: 100%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-1 {
     width: 8.3333333333%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-2 {
     width: 16.6666666667%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-3 {
     width: 25%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-4 {
     width: 33.3333333333%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-5 {
     width: 41.6666666667%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-6 {
     width: 50%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-7 {
     width: 58.3333333333%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-8 {
     width: 66.6666666667%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-9 {
     width: 75%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-10 {
     width: 83.3333333333%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-11 {
     width: 91.6666666667%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container .row .col-lg-12 {
     width: 100%;
   }
@@ -405,9 +405,6 @@ h4 {
   }
 }
 
-.upMenu__menu__list {
-  transition-duration: 0.5s;
-}
 .upMenu__menu__list a {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
@@ -438,7 +435,7 @@ h4 {
 }
 
 .hamburger__checkbox:checked + .hamburger__box__btn {
-  transform: scale(1.1);
+  background-color: red;
 }
 
 .my {

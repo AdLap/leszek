@@ -33,7 +33,7 @@
 .upMenu__nav {
   position: relative;
 
-  @media (min-width: 750px) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
   top: 0;
   right: 20px;
 
-  @media (min-width: 750px) {
+  @media (min-width: $tablet) {
     display: none;
   }
 
@@ -85,7 +85,7 @@
   width: 30px;
   height: 25px;
 
-  @media (min-width: 750px) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -98,7 +98,7 @@
   transform: translateY(-200%);
   transition-duration: .5s;
 
-    @media (min-width: 750px) {
+    @media (min-width: $tablet) {
       background-color: transparent;
       transform: translateY(0);
       transition-duration: 0s;
@@ -107,7 +107,6 @@
 }
 
 .upMenu__menu__list {
-  transition-duration: .5s;
 
   a {
     @include font-title(1.5rem, $font-bold);
@@ -119,7 +118,7 @@
     transform: scale(1.1);
   }
 
-  @media (min-width: 750px) {
+  @media (min-width: $tablet) {
     display: inline-block;
     margin-left: $margin-main;
 
@@ -138,5 +137,5 @@
 
 
 .hamburger__checkbox:checked + .hamburger__box__btn {
-    transform: scale(1.1);
+    background-color: red;
 }
