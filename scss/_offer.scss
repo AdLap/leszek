@@ -3,11 +3,30 @@
   padding-top: 100px;
 }
 
+.offer__column {
+
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-of-type(2) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
 .offer__box__img {
   border-radius: 50%;
 
   @media (min-width: $tablet) {
     height: 215px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    width: 305px;
+    height: auto;
+    margin: 0 1em 0 0;
   }
 }
 
@@ -16,42 +35,28 @@
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 6px $color-shadow;
+
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    border-radius: 0;
+  }
 }
 
 .offer__title {
   text-align: center;
   margin-top: 2rem;
+
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    margin: 0 0 2rem 2rem;
+    line-height: 1em;
+  }
 }
 
 .offer__txt {
   text-align: justify;
 }
 
-@media (min-width: $tablet) and (max-width: $laptop) {
-
-  .offer__column {
-
-    &::after,
-    &::before {
-      content: "";
-      display: block;
-      clear: both;
-    }
-  }
-
-  .offer__box__img,{
-    float: left;
-    width: 305px;
-    height: auto;
-    margin: 0 1em 0 0;
-  }
-
-  .offer__img {
-    border-radius: 0;
-  }
-
-  .offer__title {
-    margin: 0 0 2rem 2rem;
-    line-height: 1em;
-  }
+.offer__benefits__list {
+  list-style: disc;
+  margin-left: 1rem;
+  //list-style: '\1F44D';
 }
