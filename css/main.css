@@ -681,29 +681,29 @@ h4 {
   text-align: justify;
 }
 
-@media (min-width: 750px) and (max-width: 1023px) {
-  .offer__row .offer__column:last-child {
-    display: inline-block;
-  }
-  .offer__row .offer__column:last-child::after, .offer__row .offer__column:last-child::before {
+@media (min-width: 750px) and (max-width: 1024px) {
+  .offer__column::after, .offer__column::before {
     content: "";
     display: block;
     clear: both;
   }
-  .offer__row .offer__column:last-child .offer__box__img,
-.offer__row .offer__column:last-child .offer__img {
-    border-radius: 0;
+
+  .offer__box__img {
     float: left;
     width: 305px;
     height: auto;
     margin: 0 1em 0 0;
   }
-  .offer__row .offer__column:last-child .offer__title {
+
+  .offer__img {
+    border-radius: 0;
+  }
+
+  .offer__title {
     margin: 0 0 2rem 2rem;
     line-height: 1em;
   }
 }
-
 .realization {
   box-shadow: -3px 0 6px #726d6d;
   padding: 100px 0;
