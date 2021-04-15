@@ -27,11 +27,6 @@
   text-align: justify;
 }
 
-.offer__column:nth-of-type(2) {
-  .img {
-    order: 2;
-  }
-}
 .offer__row {
 
   @media (min-width: 750px) and (max-width: 1023px) {
