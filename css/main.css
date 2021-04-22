@@ -427,7 +427,7 @@ h4 {
   }
 }
 
-.hamburger__checkbox:checked + .upMenu__menu {
+.upMenu__visible {
   transform: translateY(70px);
   text-align: right;
   background-color: #f1f1f1;

@@ -107,7 +107,6 @@
 }
 
 .upMenu__menu__list {
-
   a {
     @include font-title(1.5rem, $font-bold);
     color: $color-hamburgerMenu-font;
@@ -128,12 +127,19 @@
   }
 }
 
-.hamburger__checkbox:checked + .upMenu__menu {
+.upMenu__visible {
   transform: translateY(70px);
   text-align: right;
   background-color: $color-menuBackground;
   padding: 10px;
 }
+
+//.hamburger__checkbox:checked + .upMenu__menu {
+//  transform: translateY(70px);
+//  text-align: right;
+//  background-color: $color-menuBackground;
+//  padding: 10px;
+//}
 
 
 .hamburger__checkbox:checked + .hamburger__box__btn {
