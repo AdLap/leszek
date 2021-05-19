@@ -1,13 +1,18 @@
 @use "sass:color";
 
 .upMenu__container {
-  height: 100px;
-  box-shadow: 0 3px 6px $color-shadow;
-  z-index: 10;
-  position: fixed;
-  top: 0;
   width: 100%;
-  background-color: $color-menuBackground;
+  height: 70px;
+  position: fixed;
+  top: 15px;
+
+  @media (min-width: $tablet) {
+    top: 0;
+    box-shadow: 0 3px 6px $color-shadow;
+    background-color: $color-menuBackground;
+    backdrop-filter: blur(3px);
+
+  }
 }
 
 .upMenu__bar {
@@ -20,7 +25,7 @@
 }
 
 .upMenu__box__logo {
-  height: 100%;
+  height: 70px;
   border-radius: 50%;
   box-shadow: 0 0 1px color.scale($color-shadow, $lightness: 30%);
 }
@@ -68,9 +73,11 @@
       background-color: $color-hamburgerMenu;
       position: absolute;
     }
+
     &::before {
       top: -10px;
     }
+
     &::after {
       bottom: -10px;
     }
@@ -80,7 +87,7 @@
 .hamburger__checkbox {
   opacity: 0;
   position: absolute;
-  top:-10px;
+  top: -10px;
   right: 20px;
   width: 30px;
   height: 25px;
@@ -94,54 +101,48 @@
   background-color: $color-menuBackground;
   position: absolute;
   right: 0;
-  text-align: right;
+  width: 100vw;
+  margin-right: -15px;
+  text-align: center;
   transform: translateY(-200%);
   transition-duration: .5s;
-
-    @media (min-width: $tablet) {
-      background-color: transparent;
-      transform: translateY(0);
-      transition-duration: 0s;
-      position: static;
-  }
-}
-
-.upMenu__menu__list {
-  a {
-    @include font-title(1.5rem, $font-bold);
-    color: $color-hamburgerMenu-font;
-    text-transform: uppercase;
-  }
-
-  &:hover {
-    transform: scale(1.1);
-  }
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 6px $color-shadow;
 
   @media (min-width: $tablet) {
-    display: inline-block;
-    margin-left: $margin-main;
+    box-shadow: none;
+    background-color: transparent;
+    transform: translateY(0);
+    transition-duration: 0s;
+    position: static;
+  }
 
+  &__list {
     a {
-      text-shadow: 0 0 4px $color-shadow;
+      @include font-title(1.5rem, $font-bold);
+      color: $color-hamburgerMenu-font;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @media (min-width: $tablet) {
+      display: inline-block;
+      margin-left: $margin-main;
+
+      a {
+        text-shadow: 0 0 4px $color-shadow;
+      }
     }
   }
 }
 
+
 .upMenu__visible {
-  transform: translateY(70px);
+  //transform: translateY(70px);
   text-align: right;
   background-color: $color-menuBackground;
   padding: 10px;
-}
-
-//.hamburger__checkbox:checked + .upMenu__menu {
-//  transform: translateY(70px);
-//  text-align: right;
-//  background-color: $color-menuBackground;
-//  padding: 10px;
-//}
-
-
-.hamburger__checkbox:checked + .hamburger__box__btn {
-    background-color: red;
 }

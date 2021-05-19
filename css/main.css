@@ -299,13 +299,19 @@ h4 {
 }
 
 .upMenu__container {
-  height: 100px;
-  box-shadow: 0 3px 6px #726d6d;
-  z-index: 10;
-  position: fixed;
-  top: 0;
   width: 100%;
-  background-color: #f1f1f1;
+  height: 70px;
+  position: fixed;
+  top: 15px;
+}
+@media (min-width: 750px) {
+  .upMenu__container {
+    top: 0;
+    box-shadow: 0 3px 6px #726d6d;
+    background-color: rgba(241, 241, 241, 0.7);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
 }
 
 .upMenu__bar {
@@ -318,7 +324,7 @@ h4 {
 }
 
 .upMenu__box__logo {
-  height: 100%;
+  height: 70px;
   border-radius: 50%;
   box-shadow: 0 0 1px #9d9898;
 }
@@ -389,22 +395,27 @@ h4 {
 }
 
 .upMenu__menu {
-  background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.7);
   position: absolute;
   right: 0;
-  text-align: right;
+  width: 100vw;
+  margin-right: -15px;
+  text-align: center;
   transform: translateY(-200%);
   transition-duration: 0.5s;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  box-shadow: 0 0 6px #726d6d;
 }
 @media (min-width: 750px) {
   .upMenu__menu {
+    box-shadow: none;
     background-color: transparent;
     transform: translateY(0);
     transition-duration: 0s;
     position: static;
   }
 }
-
 .upMenu__menu__list a {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
@@ -428,14 +439,9 @@ h4 {
 }
 
 .upMenu__visible {
-  transform: translateY(70px);
   text-align: right;
-  background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.7);
   padding: 10px;
-}
-
-.hamburger__checkbox:checked + .hamburger__box__btn {
-  background-color: red;
 }
 
 .my {
@@ -473,6 +479,7 @@ h4 {
   height: 360px;
   border-radius: 8px;
   position: relative;
+  z-index: -1;
 }
 
 .my__img {
@@ -491,6 +498,7 @@ h4 {
           animation-iteration-count: infinite;
   -webkit-animation-direction: normal;
           animation-direction: normal;
+  z-index: 0;
 }
 .my__img:nth-child(1) {
   -webkit-animation-name: img-change-1;
@@ -721,7 +729,7 @@ h4 {
 }
 
 .galley__box {
-  background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.7);
   border-radius: 8px;
   height: 500px;
   width: 100%;
