@@ -11,7 +11,6 @@
     box-shadow: 0 3px 6px $color-shadow;
     background-color: $color-menuBackground;
     backdrop-filter: blur(3px);
-
   }
 }
 
@@ -105,9 +104,13 @@
   margin-right: -15px;
   text-align: center;
   transform: translateY(-200%);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 6px $color-shadow;
+
+  &:active {
+    background-color: transparent;
+  }
 
   @media (min-width: $tablet) {
     box-shadow: none;
@@ -139,9 +142,7 @@
   }
 }
 
-
 .upMenu__visible {
-  //transform: translateY(70px);
   text-align: right;
   background-color: $color-menuBackground;
   padding: 10px;

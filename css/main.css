@@ -407,6 +407,9 @@ h4 {
           backdrop-filter: blur(3px);
   box-shadow: 0 0 6px #726d6d;
 }
+.upMenu__menu:active {
+  background-color: transparent;
+}
 @media (min-width: 750px) {
   .upMenu__menu {
     box-shadow: none;
@@ -445,13 +448,12 @@ h4 {
 }
 
 .my {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .my__box__txt {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 6px #726d6d;
   order: 1;
 }
 
@@ -729,24 +731,24 @@ h4 {
 }
 
 .galley__box {
-  background-color: rgba(241, 241, 241, 0.7);
   border-radius: 8px;
-  height: 500px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
-  overflow: auto;
   padding: 1rem;
 }
 
 .realization__img {
-  height: 100%;
-  width: auto;
-  box-shadow: 0 0 6px #726d6d;
-  border-radius: 8px;
-  margin: 0 1rem;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 750px) {
+  .realization__img {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+  }
 }
 
 .contact {

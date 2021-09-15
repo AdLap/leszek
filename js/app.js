@@ -17,10 +17,9 @@ burger.addEventListener('click', function () {
 });
 
 menu.addEventListener('click', function () {
-    // menu.style.transform = 'translateY(-200%)';
-    media ? menu.style.transform = 'translateY(0)' : menu.style.transform = 'translateY(-200%)';
-    // burger.classList.remove('menu-visible');
-
+    media ? menu.style.transform = null :
+        menu.style.transform = 'translateY(-200%)';
+    burger.classList.remove('menu-visible');
 });
 
 media.addEventListener('change', function (e) {

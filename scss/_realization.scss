@@ -4,22 +4,21 @@
 }
 
 .galley__box {
-  background-color: $color-menuBackground;
   border-radius: $radius-main;
-  height: 500px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
-  overflow: auto;
   padding: 1rem;
 }
 
 .realization__img {
-  height: 100%;
-  width: auto;
-  box-shadow: 0 0 6px $color-shadow;
-  border-radius: $radius-main;
-  margin: 0 1rem;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet) {
+    height: 100%;
+    width: auto;
+    border-radius: $radius-main;
+  }
 }
